@@ -13,8 +13,6 @@ $DashboardInfo = Get-DashboardZoomRooms -PageSize 300
 $ZoomRoomLocations = Get-ZoomRoomLocations -page_size 300
 $ZoomRoomStructure = Get-ZoomRoomLocationStructure
 
-
-
 $Obj = @()
 
 foreach ($Room in $ZoomRooms) {
@@ -30,8 +28,6 @@ foreach ($Room in $ZoomRooms) {
     #Add to array
     $Obj += $TempObj
 
-    # Remove variable to stop duplicates. 
-    # Remove-Variable -Name 'ZRoom'
 }
 
 $Obj
