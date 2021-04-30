@@ -69,11 +69,11 @@ The Api Secret.
 https://marketplace.zoom.us/docs/api-reference/zoom-api/dashboards/dashboardzoomrooms
 
 .EXAMPLE
-Get-DashboardZoomRooms
+Get-ZoomRoomsDashboard
 
 #>
 
-function Get-DashboardZoomRooms {
+function Get-ZoomRoomsDashboard {
     [CmdletBinding()]
     param (
         [Parameter(
